@@ -158,20 +158,7 @@ const ProductPage = (props) => {
 
   return (
     <>
-      <section className="">
-        <div className="productItem-img">
-          {bannerObj ? (
-            bannerObj.img ? (
-              bannerObj.img
-            ) : (
-              <Image className="img-fluid" alt="img-fluid" src={productimg1} />
-            )
-          ) : (
-            <Image className="img-fluid" alt="img-fluid" src={productimg1} />
-          )}
-          {/* {<Image className="img-fluid" alt="img-fluid" src={productimg1} />} */}
-        </div>
-      </section>
+     
 
       {/* <div className="prd_container">
         {cat_prdcts.length > 0 &&

@@ -214,13 +214,14 @@ input {
 .homepage-new-launches-carousel {
   position: absolute;
   top: 50%;
+  margin-left: 2%;
   padding: 0.5rem 0.9rem 0.5rem 0.9rem;
   border-radius: 50%;
   border-width: 0;
 }
 
 .new-launches-left-arrow {
-  left: 1%;
+  z-index: 1;
 }
 .new-launches-right-arrow {
   right: 1%;
@@ -578,13 +579,12 @@ input {
   gap: 5rem;
   padding-left: 8rem;
   padding-right: 8rem;
-  width: 95%;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-
+  width: 100%;
+  justify-content: flex-start;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
   gap: 5rem;
-  padding-left: 8rem;
+  padding-left: 6rem;
   padding-right: 8rem;
   padding-top: 3rem;
   overflow-x: scroll;
@@ -2175,6 +2175,7 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
 }
 .position_static {
   position: static !important;
+  transform: rotate(20deg);
 }
 .pointer_event span {
   position: static !important;
@@ -2240,6 +2241,10 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
 }
 .button_left{
   left: -100px;
+}
+.control-arrow,
+.control-next {
+  opacity: 0 !important;
 }
 .text_lookbook {
   position: absolute;

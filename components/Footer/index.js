@@ -235,11 +235,7 @@ function index() {
           </div>
           <div className="py-4">
             <h3 className="text-white fs-16 text-center">
-              Copyright Luxor {new Date().getFullYear()} | All Rights Reserved | Developed by <a
-                href="https://www.sociapa.com/"
-                target="_blank"
-                style={{ color: "#fff" }}
-              >Sociapa</a>
+              Copyright Luxor {new Date().getFullYear()} | All Rights Reserved
             </h3>
           </div>
         </div>

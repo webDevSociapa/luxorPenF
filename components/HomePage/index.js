@@ -249,7 +249,7 @@ console.log("all_prdcts", all_prdcts);
 
   const scrollRight = () => {
     if (carouselRef.current && scrollX < 400) {
-      const newScrollX = scrollX + 200; // Adjust the scroll amount as needed
+      const newScrollX = scrollX + 250; // Adjust the scroll amount as needed
       setScrollX(newScrollX);
       carouselRef.current.scrollTo({
         left: newScrollX,
@@ -459,9 +459,9 @@ console.log("all_prdcts", all_prdcts);
           >
             <div className="col-md-6 mb-3 wow animate__fadeInLeft animate__animated home-text">
               <div className="home-text-head">
-                <h1>Experience </h1>
-                <h1>the timeless </h1>
-                <h1>legacy of </h1>
+                {/* <h1>Experience </h1>
+                <h1>the timeless </h1> */}
+                <h1>Legacy of </h1>
                 <h1>Luxor</h1>
               </div>
               <div className="home-text-patra">
@@ -944,9 +944,9 @@ console.log("all_prdcts", all_prdcts);
         </div>
       </section>
 
-      <section className="pt-2">
+      <section className="pt-1">
         <h2
-          className="fs-40 text-center my-5 fw-600"
+          className="fs-40 text-center my-3 fw-600"
         // style={{ marginBottom: "7rem" }}
         >
           Luxor all around the world
@@ -993,7 +993,7 @@ console.log("all_prdcts", all_prdcts);
         </div>
       </section>
 
-      <section className="py-5">
+      <section className="py-3">
         <div className="container">
           <h2 className="fs-40 fw-600 text-center my-5 text_green">
             Let's save the <br /> environment with Luxor
@@ -1263,9 +1263,9 @@ console.log("all_prdcts", all_prdcts);
         </div>
       </section> */}
 
-      < section className="py-5" >
+      < section className="py-3" >
         <div className="container">
-          <h2 className="fs-40 text-center my-5 fw-600">Look Book</h2>
+          <h2 className="fs-40 text-center my-3 fw-600">Look Book</h2>
 
           <div className="row mt-4">
             <div
