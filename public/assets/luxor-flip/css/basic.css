@@ -12,10 +12,17 @@ body{
 	width:100%;
 	height:100%;
 }
+  
+	.downloadbutton{
+	position: absolute;
+    bottom: 5%;
+    left: 45%;
+	}
+  
 
 .flipbook-viewport .container{
 	position:absolute;
-	top:50%;
+	top:45%;
 	left:50%;
 	margin:auto;
 }

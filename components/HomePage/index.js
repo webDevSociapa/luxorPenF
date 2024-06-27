@@ -5,7 +5,25 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import pcw from "public/assets/new_launches/PCW.jpg";
 import kids from "public/assets/new_launches/kids.png";
 import nl_green from "public/assets/new_launches/li_green.png";
+import carnivalnew from "public/assets/new_launches/carnivalnew.png"
+import neronew from "public/assets/new_launches/neronew.png"
+import vistanew from "public/assets/new_launches/vistanew.png"
+import AneliaBlack from "public/assets/new_launches/AneliaBlack.png"
 import marker_blue from "public/assets/new_launches/marker_blue.png";
+import OutlineMarkerPurple from "public/assets/new_launches/Outline-Marker-Purple.png";
+// import OutlineMarkerPurple from "public/assets/new_launches/Outline-Marker-Purple.png";
+// import OutlineMarkerPurple from "public/assets/new_launches/Outline-Marker-Purple.png";
+// import OutlineMarkerPurple from "public/assets/new_launches/Outline-Marker-Purple.png";
+// import OutlineMarkerPurple from "public/assets/new_launches/Outline-Marker-Purple.png";
+import BroadtipMarker from "public/assets/new_launches/Broadtip Marker.png";
+import Fineliner from "public/assets/new_launches/Fineliner.png";
+import TwinFineWriterpastel from "public/assets/new_launches/Twin Fine Writer pastel.png";
+import Iconic_clip from "public/assets/new_launches/Iconic Pclip.png";
+
+import Elan from "public/assets/new_launches/Elan.png";
+import Fluorescent from "public/assets/new_launches/Fluorescent.png";
+import WBM_120 from "public/assets/new_launches/WBM 120 Red.png";
+import Pastel from "public/assets/new_launches/Pastel.png";
 import metal_pens from "public/assets/new_launches/metal_pens.png";
 import pm_blue_last from "public/assets/new_launches/pm_blue_last.png";
 import React, { useEffect, useRef, useState } from "react";
@@ -18,12 +36,12 @@ import { gsap } from "gsap";
 
 import Carasol from "components/carasoul";
 import ReuseImage from "public/assets/env_1.gif";
-import ReuseImage1 from "public/assets/env_2.jpg";
-import ReuseImage2 from "public/assets/env_3.jpg";
-import ReuseImage3 from "public/assets/env_4.jpg";
-import ReuseImage4 from "public/assets/env_5.jpg";
-import ReuseImage5 from "public/assets/env_6.jpg";
-import ReuseImage6 from "public/assets/env_7.jpg";
+import ReuseImage1 from "public/assets/High_Quality.png";
+import ReuseImage2 from "public/assets/Eco_Friendly.png";
+import ReuseImage3 from "public/assets/Smooth.png";
+import ReuseImage4 from "public/assets/100_Quality.png";
+import ReuseImage5 from "public/assets/100_Quality.png";
+import ReuseImage6 from "public/assets/3r.png";
 import worldMap from "public/assets/map.png";
 import style from "./style.module.css";
 // import ArtGallery from "public/assets/images/Art Gallery.jpg";
@@ -42,15 +60,16 @@ import ORK from "public/assets/images/certificates/ORK.jpg";
 import Reach from "public/assets/images/certificates/Reach.jpg";
 import Recycled from "public/assets/images/certificates/Recycled.jpg";
 import Tpat from "public/assets/images/certificates/Tpat.jpg";
-import I1 from "public/assets/images/Look Book 1.png";
-import I2 from "public/assets/images/Look Book 2.png";
-import I3 from "public/assets/images/Look Book 3.png";
+import I1 from "public/assets/images/Look_Book_Section_1.jpg";
+import I2 from "public/assets/images/Look_Book_Section_2.jpg";
+import I3 from "public/assets/images/Look_Book_Section_3.jpg";
 import Image18 from "public/assets/images/Partner.png";
 // import Slider from "@mui/material/Slider";
 import WhatPeopleSayCarosel from "@components/WhatPeopleSay";
 import WomanLed from "@components/WomanLed";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import Modal from "../Model";
 gsap.registerPlugin(ScrollTrigger);
 
 const aboutLuxor = [
@@ -106,11 +125,12 @@ function App(props) {
   };
 
   const [all_prdcts, set_all_prdcts] = useState(props.all_prdcts);
-console.log("all_prdcts", all_prdcts);
+  console.log("all_prdcts", all_prdcts);
   let router = useRouter();
   let prd_pen = useRef();
 
   const [gallery, setGallery] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
     let text_div = document.querySelectorAll(".home-text");
@@ -248,8 +268,8 @@ console.log("all_prdcts", all_prdcts);
   };
 
   const scrollRight = () => {
-    if (carouselRef.current && scrollX < 400) {
-      const newScrollX = scrollX + 250; // Adjust the scroll amount as needed
+    if (carouselRef.current && scrollX < 100000) {
+      const newScrollX = scrollX + 550; // Adjust the scroll amount as needed
       setScrollX(newScrollX);
       carouselRef.current.scrollTo({
         left: newScrollX,
@@ -783,7 +803,6 @@ console.log("all_prdcts", all_prdcts);
               <span className="title">Dunes Set</span>
             </div>
           </div>
-
           <div
             className="posterBlock7"
             onMouseEnter={(e) =>
@@ -829,6 +848,592 @@ console.log("all_prdcts", all_prdcts);
               <span className="title">Luxor Felt Tip Colouring</span>
             </div>
           </div>
+          <div
+            className="posterBlock8"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock8",
+                ".posterBlock8 img",
+                ".marker_line8",
+                "black",
+                ".posterBlock8-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock8",
+                ".posterBlock8 img",
+                ".marker_line8",
+                "white",
+                ".posterBlock8-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock8-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={carnivalnew.src}
+              />
+              <div className="marker_line8" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Carnival</span>
+            </div>
+          </div>
+          <div
+            className="posterBlock9"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock9",
+                ".posterBlock9 img",
+                ".marker_line9",
+                "black",
+                ".posterBlock9-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock9",
+                ".posterBlock9 img",
+                ".marker_line9",
+                "white",
+                ".posterBlock9-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock9-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={neronew.src}
+              />
+              <div className="marker_line9" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Nero</span>
+            </div>
+          </div>
+          <div
+            className="posterBlock10"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock10",
+                ".posterBlock10 img",
+                ".marker_line10",
+                "black",
+                ".posterBlock10-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock10",
+                ".posterBlock10 img",
+                ".marker_line10",
+                "white",
+                ".posterBlock10-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock10-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={vistanew.src}
+              />
+              <div className="marker_line10" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Vista</span>
+            </div>
+          </div>
+          <div
+            className="posterBlock11"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock11",
+                ".posterBlock11 img",
+                ".marker_line11",
+                "black",
+                ".posterBlock11-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock11",
+                ".posterBlock11 img",
+                ".marker_line11",
+                "white",
+                ".posterBlock11-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock11-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={AneliaBlack.src}
+              />
+              <div className="marker_line11" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Anelia Black</span>
+            </div>
+          </div>
+          <div
+            className="posterBlock12"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock12",
+                ".posterBlock12 img",
+                ".marker_line12",
+                "black",
+                ".posterBlock12-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock12",
+                ".posterBlock12 img",
+                ".marker_line12",
+                "white",
+                ".posterBlock12-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock12-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={Elan.src}
+              />
+              <div className="marker_line12" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Elan</span>
+            </div>
+          </div>
+          <div
+            className="posterBlock13"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock13",
+                ".posterBlock13 img",
+                ".marker_line13",
+                "black",
+                ".posterBlock13-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock13",
+                ".posterBlock13 img",
+                ".marker_line13",
+                "white",
+                ".posterBlock13-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock13-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={Fluorescent.src}
+              />
+              <div className="marker_line13" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Highlighter Fluorescent Neo</span>
+            </div>
+          </div>
+          <div
+            className="posterBlock14"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock14",
+                ".posterBlock14 img",
+                ".marker_line14",
+                "black",
+                ".posterBlock14-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock14",
+                ".posterBlock14 img",
+                ".marker_line14",
+                "white",
+                ".posterBlock14-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock14-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={Pastel.src}
+              />
+              <div className="marker_line14" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Highlighter Pastel Neo</span>
+            </div>
+          </div>
+          <div
+            className="posterBlock15"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock15",
+                ".posterBlock15 img",
+                ".marker_line15",
+                "black",
+                ".posterBlock15-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock15",
+                ".posterBlock15 img",
+                ".marker_line15",
+                "white",
+                ".posterBlock15-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock15-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={WBM_120.src}
+              />
+              <div className="marker_line15" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Whiteboard Marker 120 Neo</span>
+            </div>
+          </div>
+          <div
+            className="posterBlock16"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock16",
+                ".posterBlock16 img",
+                ".marker_line16",
+                "black",
+                ".posterBlock16-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock16",
+                ".posterBlock16 img",
+                ".marker_line16",
+                "white",
+                ".posterBlock16-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock16-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={OutlineMarkerPurple.src}
+              />
+              <div className="marker_line16" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Outline Marker</span>
+            </div>
+          </div>
+          <div
+            className="posterBlock21"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock21",
+                ".posterBlock21 img",
+                ".marker_line21",
+                "black",
+                ".posterBlock21-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock21",
+                ".posterBlock21 img",
+                ".marker_line21",
+                "white",
+                ".posterBlock21-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock21-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={BroadtipMarker.src}
+              />
+              <div className="marker_line21" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Broadtip Marker</span>
+            </div>
+          </div>
+          <div
+            className="posterBlock20"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock20",
+                ".posterBlock20 img",
+                ".marker_line20",
+                "black",
+                ".posterBlock20-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock20",
+                ".posterBlock20 img",
+                ".marker_line20",
+                "white",
+                ".posterBlock20-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock20-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={Fineliner.src}
+              />
+              <div className="marker_line20" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Fineliner</span>
+            </div>
+          </div>
+          {/* <div
+            className="posterBlock18"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock18",
+                ".posterBlock18 img",
+                ".marker_line18",
+                "black",
+                ".posterBlock18-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock18",
+                ".posterBlock18 img",
+                ".marker_line18",
+                "white",
+                ".posterBlock18-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock18-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={TwinFineWriterpastel.src}
+              />
+              <div className="marker_line18" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Dual Writer Pastel</span>
+            </div>
+          </div> */}
+          {/* <div
+            className="posterBlock17"
+            onMouseEnter={(e) =>
+              drawPen(
+                ".posterBlock17",
+                ".posterBlock17 img",
+                ".marker_line17",
+                "black",
+                ".posterBlock17-card",
+                "2px"
+              )
+            }
+            onMouseLeave={() =>
+              removeDrawPen(
+                ".posterBlock17",
+                ".posterBlock17 img",
+                ".marker_line17",
+                "white",
+                ".posterBlock17-card",
+                "2px"
+              )
+            }
+          >
+            <div
+              className="posterBlock17-card"
+              style={{
+                borderRadius: 15,
+                backgroundColor: "#ececec",
+                padding: 15,
+              }}
+            >
+              <LazyLoadImage
+                width={257}
+                height={"80%"}
+                alt="homepage"
+                src={Iconic_clip.src}
+              />
+              <div className="marker_line17" style={{ width: 0, border: "8px" }}>
+                {" "}
+              </div>
+            </div>
+            <div className="textBlock pt-3">
+              <span className="title">Iconic Fine Neo</span>
+            </div>
+          </div> */}
+
         </div>
         <button
           onClick={scrollRight}
@@ -843,7 +1448,7 @@ console.log("all_prdcts", all_prdcts);
           <div className="prodBackground">
             <div className="">
               <h2 className="fs-40 fw-600 text-center mt-4 mt-md-2 text-white pb-2">
-                Products
+                World of Luxor
               </h2>
             </div>
           </div>
@@ -944,14 +1549,14 @@ console.log("all_prdcts", all_prdcts);
         </div>
       </section>
 
-      <section className="pt-1">
+      <section className="">
         <h2
-          className="fs-40 text-center my-3 fw-600"
+          className="fs-40 text-center my-3 fw-600 pb-2"
         // style={{ marginBottom: "7rem" }}
         >
-          Luxor all around the world
+          Creating Impressions World Wide
         </h2>
-        <div className="">
+        <div className="mt-1">
           {/*            <Image
               style={{ width: "100", height: "100" }}
               className=" img-fluid h-100"
@@ -965,12 +1570,12 @@ console.log("all_prdcts", all_prdcts);
             muted
             className={style["video-img1"]}
             loop
-            src={`${process.env.NEXT_PUBLIC_BASE_URL}/Luxor_all_around_the_world.mp4`}
+            src={`${process.env.NEXT_PUBLIC_BASE_URL}/final_map_export_aeroplane.mp4`}
           />
         </div>
       </section>
 
-      <section className="py-5 pt-2">
+      <section className="py-5 pt-1">
         <div className="container-fluid p-0 vid-section">
           <h2 className="fs-40 text-center my-5 fw-600">Our Journey</h2>
           <div className="mt-5">
@@ -985,7 +1590,7 @@ console.log("all_prdcts", all_prdcts);
               className={style["video-img"]}
               // style={{ objectFit: "contain" }}
               loop
-              src={`${process.env.NEXT_PUBLIC_BASE_URL}/luxor_new_29_may_2024.mp4`}
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}/Our_Journey_24june.mp4`}
             />
             {/* <JourneyMap /> */}
             {/* <ImageMap /> */}
@@ -993,7 +1598,7 @@ console.log("all_prdcts", all_prdcts);
         </div>
       </section>
 
-      <section className="py-3">
+      <section className="py-2 pt-1">
         <div className="container">
           <h2 className="fs-40 fw-600 text-center my-5 text_green">
             Let's save the <br /> environment with Luxor
@@ -1024,8 +1629,8 @@ console.log("all_prdcts", all_prdcts);
             <span data-wow-delay="1.2s" className=" wow animate__fadeInRight animate__animated"><Image className=" img-fluid reuse-image w-80" src={ReuseImage6} alt="Re Use" /></span>
 
           </div> */}
-          <div className="d-flex mt-4 justify-content-between">
-            <div className="align-self-end w_28">
+          <div className="d-flex mt-2 justify-content-between">
+            <div className="align-self-end w_20" style={{ width: "18%" }}>
               <span
                 data-wow-delay="0.2s"
                 className="wow  animate__fadeInLeft  animate__animated"
@@ -1033,14 +1638,14 @@ console.log("all_prdcts", all_prdcts);
                 <Image className=" img-fluid" src={ReuseImage1} alt="Re Use" />
               </span>
             </div>
-            <span className="w_40 wow animate__zoomIn animate__animated">
+            <span className="wow animate__zoomIn animate__animated" style={{ width: "25%" }}>
               <Image
                 className=" img-fluid reuse-image "
                 src={ReuseImage}
                 alt="Re Use"
               />
             </span>
-            <div className="align-self-end w_28">
+            <div className="align-self-end w_20" style={{ width: "18%" }}>
               <span
                 data-wow-delay="1.2s"
                 className=" wow animate__fadeInRight animate__animated"
@@ -1050,7 +1655,7 @@ console.log("all_prdcts", all_prdcts);
             </div>
           </div>
           <div className="d-flex mt-0 gap-5 justify-content-between">
-            <div style={{ marginLeft: "16%" }} className="w_28">
+            <div style={{ marginLeft: "16%", width: "18%" }} className="w_20">
               <span
                 data-wow-delay="0.5s"
                 className=" wow animate__fadeInBottomLeft animate__animated"
@@ -1062,7 +1667,7 @@ console.log("all_prdcts", all_prdcts);
                 />
               </span>
             </div>
-            <div style={{ marginRight: "16%" }} className="w_28">
+            <div style={{ marginRight: "16%", width: "18%" }} className="w_20">
               <span
                 data-wow-delay="1s"
                 className=" wow animate__fadeInBottomRight animate__animated"
@@ -1076,7 +1681,7 @@ console.log("all_prdcts", all_prdcts);
             </div>
           </div>
           <div className="d-flex mt-0 gap-5 justify-content-center">
-            <div className="w_28">
+            <div className="w_20" style={{ width: "18%" }}>
               <span
                 data-wow-delay="0.7s"
                 className=" wow animate__fadeInUp animate__animated"
@@ -1088,7 +1693,7 @@ console.log("all_prdcts", all_prdcts);
                 />
               </span>
             </div>
-            <div className="w_28">
+            <div className="w_20" style={{ width: "18%" }}>
               <span
                 data-wow-delay="0.9s"
                 className=" wow animate__fadeInUp animate__animated"
@@ -1181,7 +1786,7 @@ console.log("all_prdcts", all_prdcts);
                     allowFullScreen
                   ></iframe>
                 </div>
-                <div className="col-md-4  ">
+                {/* <div className="col-md-4  ">
                   <iframe
                     width="100%"
                     className="rounded"
@@ -1202,7 +1807,7 @@ console.log("all_prdcts", all_prdcts);
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                   ></iframe>
-                </div>
+                </div> */}
               </div>
             </div>
 
@@ -1263,7 +1868,7 @@ console.log("all_prdcts", all_prdcts);
         </div>
       </section> */}
 
-      < section className="py-3" >
+      < section className="py-1" >
         <div className="container">
           <h2 className="fs-40 text-center my-3 fw-600">Look Book</h2>
 
@@ -1272,8 +1877,8 @@ console.log("all_prdcts", all_prdcts);
               className={`col-md-4 mb-3 col-lg-4 px-md-1 position-relative ${style.lookBook1}`}
               onClick={() => router.push("look-book/1")}
             >
-              <Image className="img-fluid rounded" src={I1} alt="look Book" />
-              <div className="text_lookbook top40">
+              <Image className="img-fluid rounded" src={I3} alt="look Book" />
+              <div className="text_lookbook top5">
                 <p className={`fs-30 fw-600 ${style.blogText1}`}>
                   Up Your <br />Presentation Game
                 </p>
@@ -1284,7 +1889,7 @@ console.log("all_prdcts", all_prdcts);
               onClick={() => router.push("look-book/2")}
             >
               <Image src={I2} className="img-fluid rounded" alt="look Book" />
-              <div className="text_lookbook top15">
+              <div className="text_lookbook top75">
                 <p className={`fs-30 fw-600 ${style.blogText2}`}>
                   Spark your creativity <br />  with Luxor pens
                 </p>
@@ -1294,8 +1899,8 @@ console.log("all_prdcts", all_prdcts);
               className={`col-md-4 mb-3 col-lg-4 px-md-1 position-relative ${style.lookBook3}`}
               onClick={() => router.push("look-book/3")}
             >
-              <Image className="img-fluid rounded" alt="look Book" src={I3} />
-              <div className="text_lookbook top60">
+              <Image className="img-fluid rounded" alt="look Book" src={I1} />
+              <div className="text_lookbook top5">
                 <p className={`fs-30 fw-600 ${style.blogText3}`}>
                   How to choose the  <br />best highlighter pen
                 </p>
@@ -1307,7 +1912,6 @@ console.log("all_prdcts", all_prdcts);
 
       <section
         className="overflow-hidden"
-        style={{ backgroundColor: "#f4f4f4f4" }}
       >
         <div className={`container-fluid`}>
           {/* <div className="container">
@@ -1350,7 +1954,6 @@ console.log("all_prdcts", all_prdcts);
 
       <section
         className="py-3 mb-4"
-        style={{ backgroundColor: "rgba(244, 244, 244, 0.957)" }}
       >
         <div>
           {/* <h2 className="fs-40 text-white text-center mb-4 fw-600">
@@ -1454,9 +2057,13 @@ console.log("all_prdcts", all_prdcts);
       </section> */}
 
       {/* ----------------------------------------footer section------------------------------------------- */}
-
+      {showModal &&
+        <Modal onClose={() => setShowModal(false)}>
+          Hello from the modal!
+        </Modal>
+      }
       <section className="footer">
-        <h2 class="fs-40 text-center my-5 fw-600" id="Partners">
+        <h2 class="fs-40 text-center my-2 fw-600" id="Partners">
           Be Our Partner/Reseller
         </h2>
 
@@ -1469,7 +2076,8 @@ console.log("all_prdcts", all_prdcts);
             <button>Know More</button>
           </div> */}
           <div className="footer-btn2">
-            <button onClick={() => window.open('https://forms.gle/yyhcYho1RyK4vj2e9', "_blank")}>Enquire Now</button>
+
+            <button onClick={() => setShowModal(true)}>Enquire Now</button>
           </div>
         </div>
 

@@ -21,7 +21,7 @@ export default class Carasol extends Component {
 
   render() {
     return (
-      <div className="mt-5">
+      <div className="mt-1">
         {/* <h1 className={style.htext}>UGC</h1> */}
 
         <div className={style.imgcontainer}>

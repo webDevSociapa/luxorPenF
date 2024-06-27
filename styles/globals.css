@@ -11,7 +11,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-
+.dropdown-menu > li:hover > .dropdown-submenu {
+  display: block;
+}
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -738,10 +740,17 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
 .serviceBox.red{ --color: #DC1625; }
 @media only screen and (max-width: 1199px){
   .serviceBox{ margin: 0 0 40px; }
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
 }
 .img-fluid {
   width: 60px; /* Adjust the width of the images */
   height: 60px; /* Adjust the height of the images */
+}
+.imgsize{
+  width: 60% !important;
+  height: 60% !important;
 }
 .img-fluid-group{
   min-width: 75% !important;
@@ -1911,6 +1920,9 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
 } */
 
 @media screen and (max-width: 1200px) {
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
   .border-img {
     display: none;
   }
@@ -1920,6 +1932,9 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: contents;
+  }
   .art-gallery-text h5 {
     width: 20rem;
   }
@@ -1928,6 +1943,9 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
   }
 }
 @media screen and (max-width: 576px) {
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: contents;
+  }
   .art-gallery-text h5 {
     float: none;
     margin-left: auto;
@@ -1943,8 +1961,11 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
 }
 
 @media screen and (max-width: 560px) {
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: contents;
+  }
   .carouselItem {
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(6, minmax(100%, 1fr));
     /* justify-content: center; */
     gap: 5rem;
@@ -1967,6 +1988,9 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
 }
 
 @media (max-width: 768px) {
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: contents;
+  }
   .header {
     height: 20%;
     flex-direction: column;
@@ -2158,6 +2182,9 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
 }
 
 @media (max-width: 1000px) {
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
   .contact-form {
     padding: 0 10px;
   }
@@ -2188,9 +2215,6 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
   top: -11px;
 }
 
-.dropdown-menu > li:hover > .dropdown-submenu {
-  display: block;
-}
 .dropdown-menu li {
   position: relative;
 }
@@ -2262,6 +2286,12 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
 }
 .top40 {
   top: 40%;
+}
+.top5 {
+  top: 5%;
+}
+.top75 {
+  top: 75%;
 }
 .btn_secondary {
   background-color: #da0428 !important;
@@ -2477,12 +2507,18 @@ transition: all 1s ease; */
 }
 
 @media screen and (max-width: 1400px) {
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
   .look-book-heading-with-description ol {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
   .career-section {
     flex-direction: column;
   }
@@ -2510,6 +2546,9 @@ transition: all 1s ease; */
 
 /* for mobile */
 @media screen and (max-width: 767px) {
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: contents;
+  }
   .whatsapp-icon {
     margin-top: 10px;
   }
@@ -2524,6 +2563,9 @@ transition: all 1s ease; */
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .dropdown-menu > li:hover > .dropdown-submenu {
+    display: block;
+  }
   .footer_bg {
     background-size: cover;
   }

@@ -46,7 +46,7 @@ export default class WhatPeopleSayCarosel extends Component {
         {/* <h1 className={style.htext}>UGC</h1> */}
 
         <div className={style.imgcontainer}>
-          <h1 className="fs-40 text-center my-5 pt-5 fw-600">Social Impact Initiatives</h1>
+          <h1 className="fs-40 text-center my-5 fw-600">Social Impact Initiatives</h1>
           <div className={style.slideContainer} ref={this.ref}>
             <div className={style.slideImage}>
               <img

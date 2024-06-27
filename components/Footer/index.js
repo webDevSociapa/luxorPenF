@@ -125,7 +125,7 @@ function index() {
               </ul>
             </div>
             <div>
-            <h3 className="fs-20 text-white mb-4">Corporate Information</h3>
+            <h3 className="fs-20 text-white mb-4">Information & Policies</h3>
               <ul className="mb-2 d-block fs-14">
                 <a
                   href={"/privacy"}
@@ -184,9 +184,10 @@ function index() {
               </ul>
             </div>
             <div>
+            <h3 className="fs-20 text-white mb-4">Corporate Information</h3> 
               <ul className="text-white ">
-                <li className="mb-3 d-block fs-14">
-                  <i class="fa-solid fa-envelope me-2 mb-3 fs-14 mt-5"></i>
+                <li className="d-block fs-14">
+                  <i class="fa-solid fa-envelope me-2 mb-3 fs-14 "></i>
                   <a
                     className="text-white"
                     href="mailto:export.enquiry@luxoroffice.com"

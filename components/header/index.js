@@ -650,7 +650,7 @@ const Header = (props) => {
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="fs-16 text_black p-2" href="#">
+                <a className="fs-16 text_black p-2" href="/assets/luxor-flip/index.html">
                   E- Catalogue
                 </a>
               </li>
