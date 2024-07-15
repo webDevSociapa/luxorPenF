@@ -6,6 +6,7 @@ import pcw from "public/assets/new_launches/PCW.jpg";
 import kids from "public/assets/new_launches/kids.png";
 import nl_green from "public/assets/new_launches/li_green.png";
 import carnivalnew from "public/assets/new_launches/carnivalnew.png"
+import revamped from "public/assets/images/Overview/about-us-revamped.png";
 import neronew from "public/assets/new_launches/neronew.png"
 import vistanew from "public/assets/new_launches/vistanew.png"
 import AneliaBlack from "public/assets/new_launches/AneliaBlack.png"
@@ -481,8 +482,8 @@ function App(props) {
               <div className="home-text-head">
                 {/* <h1>Experience </h1>
                 <h1>the timeless </h1> */}
-                <h1>Legacy of </h1>
-                <h1>Luxor</h1>
+                <h1><b>Legacy of Luxor</b></h1>
+                {/* <h1>Luxor</h1> */}
               </div>
               <div className="home-text-patra">
                 <p>
@@ -529,7 +530,7 @@ function App(props) {
               <div className="pen_marker_line"></div>
             </span> */}
 
-            <h3 className="fs-40 fw-700 text_black">New Launches</h3>
+            <h3 className="fs-50 fw-700 text_black">New Launches</h3>
           </div>
         </div>
 
@@ -1447,7 +1448,7 @@ function App(props) {
         <div className="products mt-5">
           <div className="prodBackground">
             <div className="">
-              <h2 className="fs-40 fw-600 text-center mt-4 mt-md-2 text-white pb-2">
+              <h2 className="fs-50 fw-600 text-center mt-4 mt-md-2 text-white pb-2">
                 World of Luxor
               </h2>
             </div>
@@ -1550,34 +1551,40 @@ function App(props) {
       </section>
 
       <section className="">
-        <h2
+        <div className="container-fluid p-0 vid-section">
+          {/* <h2
           className="fs-40 text-center my-3 fw-600 pb-2"
-        // style={{ marginBottom: "7rem" }}
         >
-          Creating Impressions World Wide
-        </h2>
-        <div className="mt-1">
-          {/*            <Image
+          Creating Impressions Worldwide
+        </h2> */}
+          <div className="container">
+            <div className="partner-cont">
+              <Image src={revamped} alt="homepage" />
+            </div>
+          </div>
+          <div className="mt-1">
+            {/*            <Image
               style={{ width: "100", height: "100" }}
               className=" img-fluid h-100"
               src={Image4}
               alt="Map"
         /> */}
 
-          {/* <ImageMap2 /> */}
-          <video
-            autoPlay={true}
-            muted
-            className={style["video-img1"]}
-            loop
-            src={`${process.env.NEXT_PUBLIC_BASE_URL}/final_map_export_aeroplane.mp4`}
-          />
+            {/* <ImageMap2 /> */}
+            <video
+              autoPlay={true}
+              muted
+              className={style["video-img1"]}
+              loop
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}/final_map_export_aeroplane.mp4`}
+            />
+          </div>
         </div>
       </section>
 
       <section className="py-5 pt-1">
         <div className="container-fluid p-0 vid-section">
-          <h2 className="fs-40 text-center my-5 fw-600">Our Journey</h2>
+          <h2 className="fs-50 text-center my-5 fw-600">Our Journey</h2>
           <div className="mt-5">
             {/*          <Image
             className="img-fluid w-100"
@@ -1590,7 +1597,7 @@ function App(props) {
               className={style["video-img"]}
               // style={{ objectFit: "contain" }}
               loop
-              src={`${process.env.NEXT_PUBLIC_BASE_URL}/Our_Journey_24june.mp4`}
+              src={`${process.env.NEXT_PUBLIC_BASE_URL}/2023_our_journey_full.mp4`}
             />
             {/* <JourneyMap /> */}
             {/* <ImageMap /> */}
@@ -1600,7 +1607,7 @@ function App(props) {
 
       <section className="py-2 pt-1">
         <div className="container">
-          <h2 className="fs-40 fw-600 text-center my-5 text_green">
+          <h2 className="fs-50 fw-600 text-center my-5 text_green">
             Let's save the <br /> environment with Luxor
           </h2>
 
@@ -1870,7 +1877,7 @@ function App(props) {
 
       < section className="py-1" >
         <div className="container">
-          <h2 className="fs-40 text-center my-3 fw-600">Look Book</h2>
+          <h2 className="fs-50 text-center my-3 fw-600">Look Book</h2>
 
           <div className="row mt-4">
             <div
@@ -1878,8 +1885,8 @@ function App(props) {
               onClick={() => router.push("look-book/1")}
             >
               <Image className="img-fluid rounded" src={I3} alt="look Book" />
-              <div className="text_lookbook top5">
-                <p className={`fs-30 fw-600 ${style.blogText1}`}>
+              <div className="text_lookbook top15">
+                <p className={`fs-60 fw-600 ${style.blogText1}`}>
                   Up Your <br />Presentation Game
                 </p>
               </div>
@@ -1889,9 +1896,9 @@ function App(props) {
               onClick={() => router.push("look-book/2")}
             >
               <Image src={I2} className="img-fluid rounded" alt="look Book" />
-              <div className="text_lookbook top75">
-                <p className={`fs-30 fw-600 ${style.blogText2}`}>
-                  Spark your creativity <br />  with Luxor pens
+              <div className="text_lookbook top15">
+                <p className={`fs-60 fw-600 ${style.blogText2}`}>
+                  Spark Your Creativity <br />  With Luxor Pens
                 </p>
               </div>
             </div>
@@ -1901,8 +1908,8 @@ function App(props) {
             >
               <Image className="img-fluid rounded" alt="look Book" src={I1} />
               <div className="text_lookbook top5">
-                <p className={`fs-30 fw-600 ${style.blogText3}`}>
-                  How to choose the  <br />best highlighter pen
+                <p className={`fs-55 fw-600 ${style.blogText3}`}>
+                  How To Choose The Best Highlighter Pen
                 </p>
               </div>
             </div>
@@ -2063,7 +2070,7 @@ function App(props) {
         </Modal>
       }
       <section className="footer">
-        <h2 class="fs-40 text-center my-2 fw-600" id="Partners">
+        <h2 class="fs-50 text-center my-2 fw-600" id="Partners">
           Be Our Partner/Reseller
         </h2>
 
@@ -2088,7 +2095,7 @@ function App(props) {
     </h2> */}
         <section className="certifications pb-5">
           <div className="container">
-            <h2 class="fs-40 text-center my-5 fw-600" text_black id="award">
+            <h2 class="fs-50 text-center my-5 fw-600" text_black id="award">
               Certificates
             </h2>
             <div className="row">
@@ -2154,7 +2161,7 @@ function App(props) {
           </div>
         </section>
         <div className="background">
-          <h2 class="fs-40 text-center my-5 fw-600">
+          <h2 class="fs-50 text-center my-5 fw-600">
             Awards & Recognitions
           </h2>
 

@@ -10,6 +10,7 @@ import Home_Page_Banner5 from "public/assets/Home Page Main Banner/Luxor Banner 
 import Home_Page_Banner6 from "public/assets/Home Page Main Banner/Luxor Banner 5.png";
 import Home_Page_Banner7 from "public/assets/Home Page Main Banner/Luxor Banner 6.png";
 import Image from "next/image";
+import style from "../HomePage/style.module.css";
 
 export default class Carasol extends Component {
   constructor(props) {
@@ -28,10 +29,20 @@ export default class Carasol extends Component {
         showThumbs={false}
         renderStatus={<></>}
         infiniteLoop={true}
-        interval={2000}
+        interval={2500}
       >
         <div className="carousel_banner" style={this.state.imageStyle}>
+          <video
+            autoPlay={true}
+            muted
+            className={style["video-img1"]}
+            loop
+            src={`${process.env.NEXT_PUBLIC_BASE_URL}/Banner.mp4`}
+          />
+        </div>
+        <div className="carousel_banner" style={this.state.imageStyle}>
           <Image className="img-fluid" src={Home_Page_Banner} />
+
         </div>
         <div className="carousel_banner" style={this.state.imageStyle}>
           <Image alt="banner1" className="img-fluid" src={Home_Page_Banner2} />

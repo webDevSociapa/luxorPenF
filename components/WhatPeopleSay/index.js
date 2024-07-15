@@ -18,7 +18,7 @@ import image12 from "public/assets/whatpeoplesay/images12.jpg";
 import image13 from "public/assets/whatpeoplesay/images13.jpg";
 import image14 from "public/assets/whatpeoplesay/images14.jpg";
 import image15 from "public/assets/whatpeoplesay/images15.jpg";
-import image16 from "public/assets/whatpeoplesay/images16.jpg";
+// import image16 from "public/assets/whatpeoplesay/images16.jpg";
 import image17 from "public/assets/whatpeoplesay/images17.jpg";
 import image18 from "public/assets/whatpeoplesay/images18.jpg";
 import image19 from "public/assets/whatpeoplesay/images19.jpg";
@@ -75,7 +75,7 @@ export default class WhatPeopleSayCarosel extends Component {
                 style={{ objectFit: "cover" }}
               />
             </div>
-            <div className={style.slideImage}>
+            {/* <div className={style.slideImage}>
               <img
                 className={style.img}
                 src={image4.src}
@@ -83,8 +83,8 @@ export default class WhatPeopleSayCarosel extends Component {
                 height={sliderImgSize.height}
                 style={{ objectFit: "cover" }}
               />
-            </div>
-            <div className={style.slideImage}>
+            </div> */}
+            {/* <div className={style.slideImage}>
               <img
                 className={style.img}
                 src={image4.src}
@@ -92,8 +92,8 @@ export default class WhatPeopleSayCarosel extends Component {
                 height={sliderImgSize.height}
                 style={{ objectFit: "cover" }}
               />
-            </div>
-            <div className={style.slideImage}>
+            </div> */}
+            {/* <div className={style.slideImage}>
               <img
                 className={style.img}
                 src={image5.src}
@@ -101,7 +101,7 @@ export default class WhatPeopleSayCarosel extends Component {
                 height={sliderImgSize.height}
                 style={{ objectFit: "cover" }}
               />
-            </div>
+            </div> */}
             <div className={style.slideImage}>
               <img
                 className={style.img}
@@ -192,7 +192,7 @@ export default class WhatPeopleSayCarosel extends Component {
                 style={{ objectFit: "cover" }}
               />
             </div> */}
-            <div className={style.slideImage}>
+            {/* <div className={style.slideImage}>
               <img
                 className={style.img}
                 src={image16.src}
@@ -200,7 +200,7 @@ export default class WhatPeopleSayCarosel extends Component {
                 height={sliderImgSize.height}
                 style={{ objectFit: "cover" }}
               />
-            </div>
+            </div> */}
             <div className={style.slideImage}>
               <img
                 className={style.img}
@@ -219,7 +219,7 @@ export default class WhatPeopleSayCarosel extends Component {
                 style={{ objectFit: "cover" }}
               />
             </div>
-            <div className={style.slideImage}>
+            {/* <div className={style.slideImage}>
               <img
                 className={style.img}
                 src={image19.src}
@@ -227,7 +227,7 @@ export default class WhatPeopleSayCarosel extends Component {
                 height={sliderImgSize.height}
                 style={{ objectFit: "cover" }}
               />
-            </div>
+            </div> */}
             {/* <div className={style.slideImage}>
               <img
                 className={style.img}
@@ -237,7 +237,7 @@ export default class WhatPeopleSayCarosel extends Component {
                 style={{ objectFit: "cover" }}
               />
             </div> */}
-            <div className={style.slideImage}>
+            {/* <div className={style.slideImage}>
               <img
                 className={style.img}
                 src={image21.src}
@@ -245,7 +245,7 @@ export default class WhatPeopleSayCarosel extends Component {
                 height={sliderImgSize.height}
                 style={{ objectFit: "cover" }}
               />
-            </div>
+            </div> */}
              
             <div className={style.slideImage}>
               <img

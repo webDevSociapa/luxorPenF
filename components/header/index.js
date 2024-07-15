@@ -656,17 +656,17 @@ const Header = (props) => {
               </li>
 
               <li className="nav-item">
-                <a className="fs-16 text_black p-2" href="#">
+                <a className="fs-16 text_black p-2" href="/media">
                   Media
                 </a>
               </li>
               <li className="nav-item">
-                <a className="fs-16 text_black p-2" href="#">
+                <a className="fs-16 text_black p-2" href="/art&gallery">
                   Art Gallery
                 </a>
               </li>
               <li className="nav-item">
-                <a className="fs-16 text_black p-2" href="#">
+                <a className="fs-16 text_black p-2" href="/career">
                   Career
                 </a>
               </li>

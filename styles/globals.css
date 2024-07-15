@@ -932,6 +932,8 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
   border-radius: 10px;
   cursor: pointer;
   animation: 1s linear 0.1s colorIt;
+  position: relative;
+  top: 5%
 }
 
 .product-img img {
@@ -2132,7 +2134,7 @@ carousel .slider-wrapper.axis-horizontal .slider .slide {
 }
 
 .home-text-head h1 {
-  font-size: 5vw;
+  font-size: 4vw;
   /* font-stretch: 5px; */
   width: 100%;
 }
