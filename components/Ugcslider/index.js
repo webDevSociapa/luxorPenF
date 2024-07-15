@@ -1,7 +1,10 @@
-import Imag11 from "public/assets/UGC-1.jpg";
-import Imag12 from "public/assets/UGC-2.jpg";
-import Imag13 from "public/assets/UGC-3.jpg";
-import Imag14 from "public/assets/UGC-4.jpg";
+import Imag1 from "public/assets/Happy Customer/Luxor Happy Customer 1.JPG";
+import Imag2 from "public/assets/Happy Customer/Luxor Happy Customer 2.JPG";
+import Imag3 from "public/assets/Happy Customer/Luxor Happy Customer 3.jpg";
+import Imag4 from "public/assets/Happy Customer/Luxor Happy Customer 4.jpg";
+import Imag5 from "public/assets/Happy Customer/Luxor Happy Customer 5.JPG";
+import Imag6 from "public/assets/Happy Customer/Luxor Happy Customer 6.jpg";
+import Imag7 from "public/assets/Happy Customer/Luxor Happy Customer 7.jpg";
 import React, { Component, createRef, useRef } from "react";
 import ReactDOM from "react-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -30,7 +33,7 @@ export default class Carasol extends Component {
             <div className={style.slideImage}>
               <img
                 className={style.img}
-                src={Imag11.src}
+                src={Imag1.src}
                 width={sliderImgSize.width}
                 height={sliderImgSize.height}
               />
@@ -38,7 +41,7 @@ export default class Carasol extends Component {
             <div className={style.slideImage}>
               <img
                 className={style.img}
-                src={Imag12.src}
+                src={Imag2.src}
                 width={sliderImgSize.width}
                 height={sliderImgSize.height}
               />
@@ -46,7 +49,7 @@ export default class Carasol extends Component {
             <div className={style.slideImage}>
               <img
                 className={style.img}
-                src={Imag13.src}
+                src={Imag3.src}
                 width={sliderImgSize.width}
                 height={sliderImgSize.height}
               />
@@ -54,7 +57,7 @@ export default class Carasol extends Component {
             <div className={style.slideImage}>
               <img
                 className={style.img}
-                src={Imag14.src}
+                src={Imag4.src}
                 width={sliderImgSize.width}
                 height={sliderImgSize.height}
               />
@@ -62,7 +65,7 @@ export default class Carasol extends Component {
             <div className={style.slideImage}>
               <img
                 className={style.img}
-                src={Imag11.src}
+                src={Imag5.src}
                 width={sliderImgSize.width}
                 height={sliderImgSize.height}
               />
@@ -70,7 +73,7 @@ export default class Carasol extends Component {
             <div className={style.slideImage}>
               <img
                 className={style.img}
-                src={Imag12.src}
+                src={Imag6.src}
                 width={sliderImgSize.width}
                 height={sliderImgSize.height}
               />
@@ -78,47 +81,7 @@ export default class Carasol extends Component {
             <div className={style.slideImage}>
               <img
                 className={style.img}
-                src={Imag13.src}
-                width={sliderImgSize.width}
-                height={sliderImgSize.height}
-              />
-            </div>
-            <div className={style.slideImage}>
-              <img
-                className={style.img}
-                src={Imag14.src}
-                width={sliderImgSize.width}
-                height={sliderImgSize.height}
-              />
-            </div>
-            <div className={style.slideImage}>
-              <img
-                className={style.img}
-                src={Imag11.src}
-                width={sliderImgSize.width}
-                height={sliderImgSize.height}
-              />
-            </div>
-            <div className={style.slideImage}>
-              <img
-                className={style.img}
-                src={Imag12.src}
-                width={sliderImgSize.width}
-                height={sliderImgSize.height}
-              />
-            </div>
-            <div className={style.slideImage}>
-              <img
-                className={style.img}
-                src={Imag13.src}
-                width={sliderImgSize.width}
-                height={sliderImgSize.height}
-              />
-            </div>
-            <div className={style.slideImage}>
-              <img
-                className={style.img}
-                src={Imag14.src}
+                src={Imag7.src}
                 width={sliderImgSize.width}
                 height={sliderImgSize.height}
               />
