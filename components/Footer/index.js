@@ -40,7 +40,14 @@ function index() {
                       </a>
                     </li>
                     <li className="mb-2  d-block fs-14">
+                    <a
+                        href="#"
+                        style={{
+                          color: "white",
+                        }}
+                        >
                       <i class="fa-solid fa-play me-2 fs-10"></i>Display Pack
+                      </a>
                     </li>
                     <li className="mb-2  d-block fs-14">
                       <a
@@ -111,7 +118,9 @@ function index() {
                   </a>
                 </li>
                 <li className="mb-2 d-block fs-14">
+                <a href="/media" className="text-white">
                   <i class="fa-solid fa-play me-2 fs-10"></i>News & Media
+                  </a>
                 </li>
                 <li className="mb-2 d-block fs-14">
                   <a

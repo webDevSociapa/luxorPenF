@@ -71,6 +71,7 @@ import WomanLed from "@components/WomanLed";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Modal from "../Model";
+import NewCarasol from "components/NewCarasol";
 gsap.registerPlugin(ScrollTrigger);
 
 const aboutLuxor = [
@@ -1585,23 +1586,25 @@ function App(props) {
       <section className="py-5 pt-1">
         <div className="container-fluid p-0 vid-section">
           <h2 className="fs-50 text-center my-5 fw-600">Our Journey</h2>
-          <div className="mt-5">
+          <NewCarasol />
+          {/* <div className="mt-5"> */}
             {/*          <Image
             className="img-fluid w-100"
             src={Image5}
             alt="Luxor Journey"
             /> */}
-            <video
+            {/* <video
               autoPlay={true}
               muted
               className={style["video-img"]}
               // style={{ objectFit: "contain" }}
               loop
               src={`${process.env.NEXT_PUBLIC_BASE_URL}/2023_our_journey_full.mp4`}
-            />
+            /> */}
             {/* <JourneyMap /> */}
             {/* <ImageMap /> */}
-          </div>
+          {/* </div> */}
+
         </div>
       </section>
 
@@ -1755,7 +1758,7 @@ function App(props) {
                   }</svg>
               </div>
             </div>
-            <div
+            {gallery ? <div
               className="container-fluid p-0"
               style={{ position: "relative", left: "88px" }}
             >
@@ -1816,7 +1819,7 @@ function App(props) {
                   ></iframe>
                 </div> */}
               </div>
-            </div>
+            </div> : ""}
 
             <div className={`side-curve ${gallery ? "full" : ""}`}></div>
           </div>
@@ -1886,7 +1889,7 @@ function App(props) {
             >
               <Image className="img-fluid rounded" src={I3} alt="look Book" />
               <div className="text_lookbook top15">
-                <p className={`fs-60 fw-600 ${style.blogText1}`}>
+                <p className={`vw12 fw-600 ${style.blogText1}`}>
                   Up Your <br />Presentation Game
                 </p>
               </div>
@@ -1897,7 +1900,7 @@ function App(props) {
             >
               <Image src={I2} className="img-fluid rounded" alt="look Book" />
               <div className="text_lookbook top15">
-                <p className={`fs-60 fw-600 ${style.blogText2}`}>
+                <p className={`vw12 fw-600 ${style.blogText2}`}>
                   Spark Your Creativity <br />  With Luxor Pens
                 </p>
               </div>
@@ -1907,8 +1910,8 @@ function App(props) {
               onClick={() => router.push("look-book/3")}
             >
               <Image className="img-fluid rounded" alt="look Book" src={I1} />
-              <div className="text_lookbook top5">
-                <p className={`fs-55 fw-600 ${style.blogText3}`}>
+              <div className="text_lookbook top1">
+                <p className={`vw12 fw-600 ${style.blogText3}`}>
                   How To Choose The Best Highlighter Pen
                 </p>
               </div>

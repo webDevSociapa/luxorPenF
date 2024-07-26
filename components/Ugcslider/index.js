@@ -30,7 +30,7 @@ export default class Carasol extends Component {
         <div className={style.imgcontainer}>
           <h1 className="fs-40 text-center my-5 fw-600">Happy Customers</h1>
           <div className={style.slideContainer} ref={this.ref}>
-            <div className={style.slideImage}>
+            {/* <div className={style.slideImage}>
               <img
                 className={style.img}
                 src={Imag1.src}
@@ -45,7 +45,7 @@ export default class Carasol extends Component {
                 width={sliderImgSize.width}
                 height={sliderImgSize.height}
               />
-            </div>
+            </div> */}
             <div className={style.slideImage}>
               <img
                 className={style.img}

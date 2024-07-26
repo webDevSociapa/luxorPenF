@@ -183,7 +183,6 @@ const Header = (props) => {
                     </select>
                 </div>
             </header> */}
-
       <nav className="navbar navbar-light d-none d-lg-block bg_red">
         <div className="container d-block">
           <div className="d-flex justify-content-between align-items-center">
@@ -261,7 +260,6 @@ const Header = (props) => {
           </div>
         </div>
       </nav>
-
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container ">
           <div className="collapse navbar-collapse" id="navbarNav">

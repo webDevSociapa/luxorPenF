@@ -27,7 +27,7 @@
   /* z-index: -11; */
   /* width: calc(250px*9); */
 
-  animation: scroll 140s linear infinite;
+  animation: scroll 140s linear 1s infinite;
 }
 @keyframes scroll {
   0% {

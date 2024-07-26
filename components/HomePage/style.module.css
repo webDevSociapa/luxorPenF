@@ -18,8 +18,9 @@
 .lookBook1,.lookBook2,.lookBook3 img {
   transition: opacity 0s ease-in 700ms, opacity 600ms;
 }
+
 .lookBook1:hover,.lookBook2:hover,.lookBook3:hover img {
-  /* -webkit-filter: brightness(70%); */
+  -webkit-filter: brightness(90%);
 }
 
 .lookBook1,

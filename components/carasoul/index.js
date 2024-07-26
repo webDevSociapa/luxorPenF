@@ -29,7 +29,7 @@ export default class Carasol extends Component {
         showThumbs={false}
         renderStatus={<></>}
         infiniteLoop={true}
-        interval={2500}
+        interval={10000}
       >
         <div className="carousel_banner" style={this.state.imageStyle}>
           <video

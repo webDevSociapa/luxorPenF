@@ -165,6 +165,9 @@
 .fs-30 {
   font-size: 30px;
 }
+.vw12 {
+  font-size: 3.5vw;
+}
 .fs-60 {
   font-size: 60px;
 }
@@ -304,6 +307,12 @@
   .header {
     height: 17vw;
   }
+  .vw12 {
+    font-size: 12vw;
+  }
+  .fs-50 {
+    font-size: 30px;
+  }
 
   .main-broad-container {
     flex-direction: column;
@@ -380,7 +389,12 @@
   .color_red {
     background-color: #ed1b24;
   }
-
+  .fs-50 {
+    font-size: 30px;
+  }
+  .vw12 {
+    font-size: 12vw;
+  }
   #eco-write {
     margin-right: 0px !important;
   }
@@ -410,8 +424,14 @@
   .product-carousel-btn {
     display: none;
   }
+  .fs-50 {
+    font-size: 30px;
+  }
   .w_20 {
     width: 20%;
+  }
+  .vw12 {
+    font-size: 3.5vw;
   }
 }
 
@@ -419,7 +439,12 @@
   .color_red {
     background-color: #ed1b24;
   }
-
+  .fs-50 {
+    font-size: 30px;
+  }
+  .vw12 {
+    font-size: 12vw;
+  }
   #eco-write {
     margin-right: 0px !important;
   }
@@ -474,10 +499,16 @@
   .popular_picks {
     margin-top: -32%;
   }
+  .fs-50 {
+    font-size: 50px;
+  }
   .w_20 {
     width: 20%;
   }
 
+  .vw12 {
+    font-size: 3.5vw;
+  }
   .Art_gallery_button {
     border-radius: 20px;
     padding: 13px 23px;
@@ -498,7 +529,9 @@
   .popular_picks {
     margin-top: -25%;
   }
-
+  .vw12 {
+    font-size: 3.5vw;
+  }
   .products_list {
     margin-top: -22%;
   }
