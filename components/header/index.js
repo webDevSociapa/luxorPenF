@@ -65,6 +65,7 @@ const Header = (props) => {
     );
   };
 
+  
   const langChange = (evt, e) => {
     evt.preventDefault();
     if (hasCookie("googtrans")) {

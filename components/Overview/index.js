@@ -116,13 +116,13 @@ const index = () => {
                     />
                 </div>
             </section>
-            <section className="py-5">
+            {/* <section className="py-5">
                 <div className="container">
                     <div className="partner-cont">
                         <Image src={revamped} alt="homepage" />
                     </div>
                 </div>
-            </section>
+            </section> */}
             <section className="py-5">
                 <div className="container">
                     <div >
@@ -252,7 +252,7 @@ const index = () => {
                                 id="eco-write"
                                 src={Sustainable}
                                 alt="ecowrite"
-                                className="img-fluid w-100"
+                                className="img-fluid"
                             />
                         </div>
                         {/* <div className="col-md-6 mb-3 px-lg-0">
@@ -317,7 +317,7 @@ const index = () => {
             <section className="certifications pb-5">
                 <div className="container">
                     <h2 class="fs-40 text-center my-5 fw-600" text_black id="award">
-                        Certificates
+                    Certificates
                     </h2>
                     <div className="row">
                         <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">

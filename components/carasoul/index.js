@@ -31,24 +31,23 @@ export default class Carasol extends Component {
         infiniteLoop={true}
         interval={10000}
       >
-        <div className="carousel_banner" style={this.state.imageStyle}>
+        {/* <div className="carousel_banner" style={this.state.imageStyle}>
           <video
             autoPlay={true}
             muted
             className={style["video-img1"]}
             loop
-            src={`${process.env.NEXT_PUBLIC_BASE_URL}/Banner.mp4`}
+            src={`${process.env.NEXT_PUBLIC_BASE_URL}/Banner_change_final.mp4`}
           />
-        </div>
-        <div className="carousel_banner" style={this.state.imageStyle}>
-          <Image className="img-fluid" src={Home_Page_Banner} />
-
-        </div>
+        </div> */}
         <div className="carousel_banner" style={this.state.imageStyle}>
           <Image alt="banner1" className="img-fluid" src={Home_Page_Banner2} />
         </div>
         <div className="carousel_banner" style={this.state.imageStyle}>
           <Image alt="banner2" className="img-fluid" src={Home_Page_Banner3} />
+        </div>
+        <div className="carousel_banner" style={this.state.imageStyle}>
+          <Image className="img-fluid" src={Home_Page_Banner} />
         </div>
         <div className="carousel_banner" style={this.state.imageStyle}>
           <Image alt="banner2" className="img-fluid" src={Home_Page_Banner4} />

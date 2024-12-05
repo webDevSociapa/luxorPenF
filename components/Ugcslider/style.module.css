@@ -6,49 +6,7 @@
   /* display: grid; */
   place-items: center;
 }
-.imgcontainer {
-  /* height: 350px; */
-  margin: auto;
-  /* margin-top: 2rem; */
-  margin-top: 0rem;
-  position: relative;
-  z-index: 1;
-  width: 90%;
-  /* display: grid; */
-  place-items: center;
-  margin-bottom: 0;
-}
 
-.slideContainer {
-  padding: 18px;
-  margin: auto;
-  display: flex;
-  /* position: /relative; */
-  /* z-index: -11; */
-  /* width: calc(250px*9); */
-
-  animation: scroll 8s linear infinite;
-}
-@keyframes scroll {
-  /* 0% {
-    transform: translateX(0);
-  } */
-  from {
-    transform: translateX(calc(-55%));
-  }
-  to {
-    transform: translateX(calc(-5%));
-  }
-}
-
-@keyframes marquee {
-  0% {
-    margin-left: 100%;
-  }
-  100% {
-    margin-left: -100%;
-  }
-}
 .slideImage {
   /* height: 300px; */
   /* width: 300px; */
@@ -67,10 +25,11 @@
   position: relative;
   /* transition: opacity 2s ease-in-out; */
   transform: scale(1.1);
-  -webkit-box-shadow: 9px -9px 175px 5px rgba(0, 0, 0, 0.49);
-  -moz-box-shadow: 9px -9px 175px 5px rgba(0, 0, 0, 0.49);
-  box-shadow: 9px -9px 175px 5px rgba(0, 0, 0, 0.49);
+  -webkit-box-shadow: 3px -3px 15px 3px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 3px -3px 15px 3px rgba(0, 0, 0, 0.49);
+  box-shadow: 3px -3px 15px 3px rgba(0, 0, 0, 0.49);
 }
+
 .htext {
   text-align: center;
   margin-left: 1%;
@@ -80,21 +39,71 @@
   transform: rotate(180deg);
 }
 
-@keyframes fade {
-}
+@keyframes fade {}
 
 @media screen and (min-width: 800px) and (max-width: 900px) {
   .body {
     height: 51vh;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 799px) {
   .body {
     height: 58vh;
   }
 }
+
 @media screen and (max-width: 479px) {
   .body {
     height: 70vh;
+  }
+}
+
+.imgcontainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.slideContainer {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideContent {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  padding: 18px;
+  animation: scroll-left 140s linear 1s infinite;
+}
+
+.img {
+  margin: 0 10px;
+  /* Adjust spacing between images */
+  height: 75%;
+  /* Ensure images are responsive */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(4%);
+    /* Start position off-screen right */
+  }
+
+  20% {
+    transform: translateX(10 );
+    /* Show content for initial cycles */
+  }
+
+  80% {
+    transform: translateX(-100%);
+    /* Move left, covering the width of the images */
+  }
+
+  100% {
+    transform: translateX(-200%);
+    /* Extend beyond the end for seamless loop */
   }
 }

@@ -1,6 +1,8 @@
 import axios from "axios";
 import CONSTANT from "constant";
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 //get-all-global-products(new collection created)
 export const getAllGlobalProducts = (_id, page_no) => {
   const url = `${process.env.NEXT_PUBLIC_BASE_URL}/get-all-global-products?_id=${_id}&page_no=${page_no}`;

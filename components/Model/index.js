@@ -9,6 +9,22 @@ const Modal = ({ onClose, title }) => {
         email: '',
         message: ''
     });
+    async function sendEmail(to, subject, text) {
+        const response = await fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ to, subject, text }),
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+            console.log('Email sent:', result.message);
+        } else {
+            console.error('Error sending email:', result.error);
+        }
+    }
 
     const [errors, setErrors] = useState({});
     // const [success, setSucces] = useState(false);
@@ -43,6 +59,7 @@ const Modal = ({ onClose, title }) => {
     };
 
     const handleSubmit = async (e) => {
+        // sendEmail('recipient@example.com', 'Test Subject', 'Hello, this is a test email.');
         e.preventDefault();
         if (validateForm()) {
             // setSucces(true)

@@ -11,9 +11,9 @@ export default function () {
     <React.Fragment>
       <section className="py-5">
         <div className="container">
-          <h2 className="fs-40 text-center mb-4 fw-600 ">
+          <h1 className="fs-40 text-center mb-5 fw-600 ">
             A Woman-Led Organization
-          </h2>
+          </h1>
           {/* <div className="d-flex justify-content-center mb-2">
             <button
               onClick={() => {

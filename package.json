@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mikecousins/react-pdf": "^6.1.1",
+    "@mikecousins/react-pdf": "^7.1.0",
     "@next/eslint-plugin-next": "^14.0.0",
     "@react-pdf/renderer": "^3.1.14",
     "axios": "^1.5.1",
@@ -19,7 +19,8 @@
     "next": "^12.3.4",
     "next-optimized-images": "^2.6.2",
     "nextjs-progressbar": "^0.0.16",
-    "pdfjs-dist": "^4.0.189",
+    "pdfjs-dist": "^4.3.136",
+    "pm2": "^5.4.2",
     "react": "^18.2.0",
     "react-card-slider-component": "^1.0.9",
     "react-dom": "^18.2.0",

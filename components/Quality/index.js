@@ -51,7 +51,7 @@ function index() {
 
     <section className="certifications pb-5">
         <div className="container">
-        <h2 class="fs-40 text-center my-5 fw-600" text_black id="award">Certifications</h2>
+        <h2 class="fs-40 text-center my-5 fw-600" text_black id="award">Certificates</h2>
             <div className="row">
             <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
                     <div className="carousel-inner">

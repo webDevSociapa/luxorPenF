@@ -35,6 +35,7 @@ export default class NewCarasol extends Component {
         <div className="carousel_banner" style={this.state.imageStyle}>
           <video
             autoPlay={true}
+            preload="none"
             muted
             className={style["video-img1"]}
             loop
@@ -44,6 +45,7 @@ export default class NewCarasol extends Component {
         <div className="carousel_banner" style={this.state.imageStyle}>
           <video
             autoPlay={true}
+            preload="none"
             muted
             className={style["video-img1"]}
             loop
@@ -53,6 +55,7 @@ export default class NewCarasol extends Component {
         <div className="carousel_banner" style={this.state.imageStyle}>
           <video
             autoPlay={true}
+            preload="none"
             muted
             className={style["video-img1"]}
             loop
